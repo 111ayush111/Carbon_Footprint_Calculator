@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌱 Carbon Footprint Calculator</h1>
+            <p>Calculate your environmental impact</p>
+        </header>
+
+        <main>
+            <section class="calculator">
+                <h2>Your Carbon Emissions</h2>
+                <form id="footprint-form">
+                    <div class="input-group">
+                        <label for="electricity">⚡ Monthly Electricity (kWh)</label>
+                        <input type="number" id="electricity" placeholder="e.g. 300">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="gas">🔥 Monthly Gas (therms)</label>
+                        <input type="number" id="gas" placeholder="e.g. 40">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="miles">🚗 Annual Miles Driven</label>
+                        <input type="number" id="miles" placeholder="e.g. 10000">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="mpg">⛽ Vehicle MPG</label>
+                        <input type="number" id="mpg" placeholder="e.g. 25">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="flights">✈️ Annual Flight Hours</label>
+                        <input type="number" id="flights" placeholder="e.g. 5">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="diet">🍽️ Primary Diet</label>
+                        <select id="diet">
+                            <option value="vegan">Vegan</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="meat-light">Meat - Occasionally</option>
+                            <option value="meat-heavy" selected>Meat - Regularly</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" id="calculate">Calculate Footprint</button>
+                </form>
+                
+                <div class="results" id="results">
+                    <h3>Your Annual Carbon Footprint</h3>
+                    <div class="result">
+                        <span>🏠 Home Energy:</span>
+                        <span id="home-result">0 lbs CO₂</span>
+                    </div>
+                    <div class="result">
+                        <span>🚗 Transportation:</span>
+                        <span id="transport-result">0 lbs CO₂</span>
+                    </div>
+                    <div class="result">
+                        <span>🍎 Food:</span>
+                        <span id="food-result">0 lbs CO₂</span>
+                    </div>
+                    <div class="result total">
+                        <span>🧮 Total:</span>
+                        <span id="total-result">0 lbs CO₂</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="tips">
+                <h2>💡 Reduction Tips</h2>
+                <div class="tip-cards">
+                    <div class="card">
+                        <h3>🏠 Home</h3>
+                        <ul>
+                            <li>Switch to LED bulbs</li>
+                            <li>Lower thermostat in winter</li>
+                            <li>Use energy-efficient appliances</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🚗 Transport</h3>
+                        <ul>
+                            <li>Carpool or use public transit</li>
+                            <li>Maintain proper tire pressure</li>
+                            <li>Consider an electric vehicle</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🍽️ Food</h3>
+                        <ul>
+                            <li>Reduce meat consumption</li>
+                            <li>Buy local produce</li>
+                            <li>Reduce food waste</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2023 Carbon Footprint Calculator | 🌍 Save the Planet</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
